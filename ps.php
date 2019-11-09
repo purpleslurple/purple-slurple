@@ -72,8 +72,8 @@ if (!ereg('://', $theurl))
     $theurl = "http://".$theurl; 
      
 // check for http-based url (thanks Jonathan Cheyer) 
-//if (!ereg('http://', $theurl)) 
-     //die('PurpleSlurple only supports http-based urls'); //die, do not process 
+if (!ereg('http://', $theurl)) 
+     die('PurpleSlurple only supports http-based urls'); //die, do not process 
 
 // Do not slurp self 
 if (strpos($theurl,$file_location) !== false) 
