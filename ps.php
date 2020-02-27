@@ -90,7 +90,7 @@ $ps_header_unused = '<br><a href="'.$file_location.'?collapse=no&amp;theurl='.$t
 
 // PurpleSlurple footer 
 $ps_footer = '<br style="clear:both"><hr><p style="height: 700px"> 
-<a href="http://www.purpleslurple.net/">PurpleSlurple</a>&#153; was created 
+<a href="http://www.purpleslurple.com/">PurpleSlurple</a>&#153; was created 
 by <a href="mailto:matsch@sasites.com">Matthew A. Schneider</a></p>'; 
 
 // set base to ensure relative links work 
