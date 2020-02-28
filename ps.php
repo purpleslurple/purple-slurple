@@ -62,7 +62,7 @@ Now when you are viewing a page on which you would like Purple numbers just clic
 <p>Enter the URL of the page to which you would like to apply Purple numbers.</p> 
 <form method="get" action="ps.php"><input type="text" name="theurl" size="30"> 
 (e.g., http://www.somedomain.com/somepage.html)<br><input type="submit" value="Submit"></form> 
-<hr><p><a href="http://www.purpleslurple.net/">PurpleSlurple</a> &#153; 
+<hr><p><a href="https://www.purpleslurple.com/ps.php">PurpleSlurple</a> &#153; 
 was created by <a href="mailto:matsch@sasites.com">Matthew A. Schneider</a></p>'; 
   exit; 
 } 
@@ -90,7 +90,7 @@ $ps_header_unused = '<br><a href="'.$file_location.'?collapse=no&amp;theurl='.$t
 
 // PurpleSlurple footer 
 $ps_footer = '<br style="clear:both"><hr><p style="height: 700px"> 
-<a href="http://www.purpleslurple.com/">PurpleSlurple</a>&#153; was created 
+<a href="https://www.purpleslurple.com/ps.php">PurpleSlurple</a>&#153; was created 
 by <a href="mailto:matsch@sasites.com">Matthew A. Schneider</a></p>'; 
 
 // set base to ensure relative links work 
