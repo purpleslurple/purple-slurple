@@ -33,7 +33,7 @@ if (isset($_SERVER['PATH_INFO']) && ($_SERVER['PATH_INFO'] !="") ) {
 } else { 
     $file_location = $_SERVER['SCRIPT_NAME']; 
 } 
-$file_location = "http://".$_SERVER['HTTP_HOST'].$file_location; 
+$file_location = "https://".$_SERVER['HTTP_HOST'].$file_location; 
 
 // Register globals is bad, bad, bad - setting $theurl explicitly 
 $theurl = $_GET['theurl']; 
@@ -61,7 +61,7 @@ Now when you are viewing a page on which you would like Purple numbers just clic
 (Javascript must be enabled).</p><hr> 
 <p>Enter the URL of the page to which you would like to apply Purple numbers.</p> 
 <form method="get" action="ps.php"><input type="text" name="theurl" size="30"> 
-(e.g., http://www.somedomain.com/somepage.html)<br><input type="submit" value="Submit"></form> 
+(e.g., https://www.somedomain.com/somepage.html)<br><input type="submit" value="Submit"></form> 
 <hr><p><a href="https://purpleslurple.com/ps.php">PurpleSlurple</a> &#153; 
 was created by <a href="mailto:matsch@sasites.com">Matthew A. Schneider</a></p>'; 
   exit; 
@@ -69,7 +69,7 @@ was created by <a href="mailto:matsch@sasites.com">Matthew A. Schneider</a></p>'
 
 // check for sloppy input - missing protocol 
 if (!ereg('://', $theurl)) 
-    $theurl = "http://".$theurl; 
+    $theurl = "https://".$theurl; 
      
 // check for http-based url (thanks Jonathan Cheyer) 
 // if (!ereg('http://', $theurl)) 
